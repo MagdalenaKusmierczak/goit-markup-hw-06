@@ -6,6 +6,7 @@
   --creme-white: #ececec;
   --grey-icons: #afb1b8;
   --grey-circle: rgba(255, 255, 255, 0.1);
+  --grey-tone: #757575;
 }
 
 body {
@@ -250,7 +251,7 @@ a.link {
 .header-contacts a {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey-tone);
 }
 .address-list a {
   color: rgba(255, 255, 255, 0.6);
@@ -330,7 +331,7 @@ a.link {
 .description-list-paragraf {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-tone);
 }
 .address-list {
   font-style: normal;
@@ -420,7 +421,7 @@ a.link {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #757575;
+  color: var(--grey-tone);
 }
 .project-name {
   font-weight: 700;
@@ -435,7 +436,7 @@ a.link {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-tone);
   padding-left: 24px;
   padding-bottom: 20px;
 }
@@ -627,7 +628,7 @@ a.link {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--grey-tone);
   position: absolute;
   top: -18px;
   left: 0;
@@ -675,6 +676,15 @@ a.link {
 .policy-checkbox-label {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: 55px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-tone);
+}
+.policy-link {
+  color: var(--brand-color);
 }
 .sign-up-form-icon {
   width: 18px;
@@ -702,5 +712,13 @@ a.link {
   margin-left: 164px;
   margin-bottom: 40px;
   padding: 0;
+}
+
+.sign-up-fieldset:focus-within,
+.comment-fieldset:focus-within,
+.sign-up-fieldset:hover,
+.comment-fieldset:hover {
+  border-color: var(--brand-color);
+  fill: var(--brand-color);
 }
 /* Form */
