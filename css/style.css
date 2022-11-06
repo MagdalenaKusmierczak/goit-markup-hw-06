@@ -676,12 +676,18 @@ a.link {
 .policy-checkbox-label {
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: 55px;
+  margin-left: 77px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-tone);
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
 }
 .policy-link {
   color: var(--brand-color);
@@ -721,4 +727,26 @@ a.link {
   border-color: var(--brand-color);
   fill: var(--brand-color);
 }
-/* Form */
+.build-in-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: -22px;
+  width: 16px;
+  height: 15px;
+}
+.checked-mark {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.custom-mark {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: -22px;
+  opacity: 1;
+}
+/* Form */ ;
