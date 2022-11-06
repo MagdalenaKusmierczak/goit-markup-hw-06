@@ -557,21 +557,40 @@
             <use href="./images/icons.svg#btn-modal"></use>
           </svg>
         </button>
-        <form name="signup_form">
-          <label>
-            Imię
-            <input type="text" name="Imię" />
-          </label>
-          <label>
-            Telefon
-            <input type="phone" name="Telefon" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="Email" />
-          </label>
-
-          <button type="submit">Wyślij</button>
+        <form class="sign-up-form" name="signup_form">
+          <legend class="sign-up-form-legend">
+            Zostaw swoje dane w formularzu poniżej
+          </legend>
+          <fieldset class="sign-up-fieldset">
+            <label class="sign-up-label" for="name">Imię</label>
+            <svg class="sign-up-form-icon">
+              <use href="/images/icons.svg#form-person"></use>
+            </svg>
+            <input class="sign-up-input" type="text" id="name" required />
+          </fieldset>
+          <fieldset class="sign-up-fieldset">
+            <label class="sign-up-label" for="phone">Telefon</label>
+            <svg class="sign-up-form-icon">
+              <use href="/images/icons.svg#form-phone"></use>
+            </svg>
+            <input class="sign-up-input" type="tel" id="phone" required />
+          </fieldset>
+          <fieldset class="sign-up-fieldset">
+            <label class="sign-up-label" for="email">Email</label>
+            <svg class="sign-up-form-icon">
+              <use href="/images/icons.svg#form-email"></use>
+            </svg>
+            <input class="sign-up-input" type="email" id="email" required />
+          </fieldset>
+          <fieldset class="comment-fieldset">
+          <label class="sign-up-label" for="comment">Komentarz</label>
+          <input class="sign-up-input textarea" type="textarea" id="comment" placeholder="Wprowadź tekst" />
+</fieldset>
+          <label class="policy-checkbox-label">
+            <input type="checkbox" name="policy-checkbox" required />
+            Oświadczam iż akceptuję <a href="./index.html">Regulamin</a> i
+            <a href="./index.html">Politykę Prywatności</a>. </label
+          ><button class="sign-up-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
