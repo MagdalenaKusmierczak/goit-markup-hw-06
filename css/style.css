@@ -7,6 +7,8 @@
   --grey-icons: #afb1b8;
   --grey-circle: rgba(255, 255, 255, 0.1);
   --grey-tone: #757575;
+  --grey-shadow: rgba(255, 255, 255, 0.6);
+  --background-blueish: #2f303a;
 }
 
 body {
@@ -96,7 +98,7 @@ ul {
   gap: 30px;
 }
 .introduction {
-  background-color: #2f303a;
+  background-color: var(--background-blueish);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/backgroundimage.jpg');
   background-size: cover;
@@ -117,7 +119,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-blueish);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -254,7 +256,7 @@ a.link {
   color: var(--grey-tone);
 }
 .address-list a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--grey-shadow);
 }
 
 /* Link settings */
@@ -275,13 +277,13 @@ a.link {
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--brand-color);
+  border: none;
   cursor: pointer;
 }
 .portfolio-button {
   font-family: 'Roboto', sans-serif;
   background-color: var(--secound-white);
-  border-color: var(--secound-white);
+  border: none;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -298,7 +300,6 @@ a.link {
 .portfolio-button:focus {
   background: var(--brand-color);
   color: var(--pure-white);
-  border-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -396,12 +397,14 @@ a.link {
   text-transform: uppercase;
 }
 .footer-media-header {
+  font-size: inherit;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pure-white);
   padding-top: 12px;
   padding-bottom: 20px;
+  font-style: normal;
 }
 /* Header settings */
 /*  */
@@ -638,7 +641,8 @@ a.link {
   border: none;
   outline: none;
   font-size: 12px;
-  letter-spacing: 1.16;
+  letter-spacing: 0.01em;
+  line-height: 1.16;
 }
 .sign-up-input::placeholder {
   font-size: 12px;
@@ -660,7 +664,7 @@ a.link {
   padding-block: 10px;
   margin-top: 0;
   will-change: bordercolor, fill;
-  transition: fill 250ms, bordercolor 250ms;
+  transition: fill 250ms, border-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-fieldset {
@@ -764,4 +768,72 @@ a.link {
 .policy-checkbox-label input:checked ~ .custom-mark {
   background-color: var(--brand-color);
 }
-/* Form */ ;
+/* Form */
+/* footer form */
+.footer-form-button {
+  width: 200px;
+  height: 50px;
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--pure-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  position: relative;
+  text-align: left;
+  padding-left: 42px;
+  cursor: pointer;
+}
+.footer-form-icon {
+  fill: var(--pure-white);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 28px;
+}
+.footer-form-input {
+  background-color: var(--background-blueish);
+  border: none;
+  outline: none;
+  color: var(--pure-white);
+  width: 100%;
+  height: 100%;
+}
+.footer-form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--grey-shadow);
+}
+.footer-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.footer-sub {
+  padding-top: 48px;
+}
+
+.footer-form-fieldset {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  position: relative;
+}
+.footer-form-label {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pure-white);
+  position: absolute;
+  top: -37px;
+  left: 0;
+}
+/* footer form  */

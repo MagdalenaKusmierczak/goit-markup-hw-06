@@ -547,6 +547,30 @@
               </li>
             </ul>
           </div>
+          <div class="footer-sub">
+            <form class="footer-form" name="signup-footer-form">
+              <fieldset class="footer-form-fieldset">
+                <label class="footer-form-label" for="sub-email"
+                  >Zapisz się do newslettera</label
+                >
+
+                <input
+                  class="footer-form-input"
+                  type="email"
+                  name="subscribtion-email"
+                  id="sub-email"
+                  placeholder="E-mail"
+                  required
+                />
+              </fieldset>
+              <button class="footer-form-button" type="submit">
+                Zapisz się<svg class="footer-form-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+              </button>
+              
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -558,9 +582,9 @@
           </svg>
         </button>
         <form class="sign-up-form" name="signup_form">
-          <legend class="sign-up-form-legend">
+          <div class="sign-up-form-legend">
             Zostaw swoje dane w formularzu poniżej
-          </legend>
+          </div>
           <fieldset class="sign-up-fieldset">
             <label class="sign-up-label label-form" for="name">Imię</label>
             <svg class="sign-up-form-icon">
@@ -606,7 +630,7 @@
             >
             <input
               class="sign-up-input textarea"
-              type="textarea"
+              type="text"
               name="user-comment"
               id="comment"
               placeholder="Wprowadź tekst"
