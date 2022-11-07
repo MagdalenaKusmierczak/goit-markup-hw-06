@@ -659,6 +659,9 @@ a.link {
   padding-left: 12px;
   padding-block: 10px;
   margin-top: 0;
+  will-change: bordercolor, fill;
+  transition: fill 250ms, bordercolor 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-fieldset {
   width: 448px;
@@ -673,22 +676,7 @@ a.link {
   padding-block: 11px;
   margin-top: 0;
 }
-.policy-checkbox-label {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: 77px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--grey-tone);
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: block;
-}
+
 .policy-link {
   color: var(--brand-color);
 }
@@ -727,26 +715,53 @@ a.link {
   border-color: var(--brand-color);
   fill: var(--brand-color);
 }
+
+.policy-checkbox-label {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 77px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--grey-tone);
+  position: relative;
+}
+.hidden-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
 .build-in-checkbox {
+  display: block;
   position: absolute;
-  opacity: 0;
   cursor: pointer;
   left: -22px;
+  top: 3px;
   width: 16px;
   height: 15px;
-}
-.checked-mark {
-  width: 16px;
-  height: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border: 2px #212121 solid;
+  border-radius: 2px;
 }
 .custom-mark {
   position: absolute;
+  display: block;
   width: 16px;
   height: 15px;
   left: -22px;
-  opacity: 1;
+  top: 3px;
+  border-radius: 2px;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checked-mark {
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 1px;
+}
+.policy-checkbox-label input:checked ~ .custom-mark {
+  background-color: var(--brand-color);
 }
 /* Form */ ;

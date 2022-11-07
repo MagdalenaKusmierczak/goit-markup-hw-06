@@ -564,32 +564,70 @@
           <fieldset class="sign-up-fieldset">
             <label class="sign-up-label label-form" for="name">Imię</label>
             <svg class="sign-up-form-icon">
-              <use href="/images/icons.svg#form-person"></use>
+              <use href="./images/icons.svg#form-person"></use>
             </svg>
-            <input class="sign-up-input" type="text" name="user-name" id="name" required />
+            <input
+              class="sign-up-input"
+              type="text"
+              name="user-name"
+              id="name"
+              required
+            />
           </fieldset>
           <fieldset class="sign-up-fieldset">
             <label class="sign-up-label label-form" for="phone">Telefon</label>
             <svg class="sign-up-form-icon">
-              <use href="/images/icons.svg#form-phone"></use>
+              <use href="./images/icons.svg#form-phone"></use>
             </svg>
-            <input class="sign-up-input" type="tel" name="user-phone-number" id="phone" required />
+            <input
+              class="sign-up-input"
+              type="tel"
+              name="user-phone-number"
+              id="phone"
+              required
+            />
           </fieldset>
           <fieldset class="sign-up-fieldset">
             <label class="sign-up-label label-form" for="email">Email</label>
             <svg class="sign-up-form-icon">
-              <use href="/images/icons.svg#form-email"></use>
+              <use href="./images/icons.svg#form-email"></use>
             </svg>
-            <input class="sign-up-input" type="email" name="user-email-address" id="email" required />
+            <input
+              class="sign-up-input"
+              type="email"
+              name="user-email-address"
+              id="email"
+              required
+            />
           </fieldset>
           <fieldset class="comment-fieldset">
-          <label class="sign-up-label label-form" for="comment">Komentarz</label>
-          <input class="sign-up-input textarea" type="textarea" name="user-comment" id="comment" placeholder="Wprowadź tekst" />
-</fieldset>
+            <label class="sign-up-label label-form" for="comment"
+              >Komentarz</label
+            >
+            <input
+              class="sign-up-input textarea"
+              type="textarea"
+              name="user-comment"
+              id="comment"
+              placeholder="Wprowadź tekst"
+            />
+          </fieldset>
           <label class="policy-checkbox-label">
-            <span class="custom-mark"><svg class="checked-mark"><use  ref="/images/icons.svg#check"></use></svg></span><input class="build-in-checkbox" type="checkbox" name="policy-checkbox" required />
-            Oświadczam iż akceptuję <a class="policy-link" href="./index.html">Regulamin</a> i
-            <a class="policy-link" href="./index.html">Politykę Prywatności</a>. </label
+            <input
+              class="build-in-checkbox hidden-input"
+              type="checkbox"
+              name="policy-checkbox"
+              required
+            />
+            <span class="custom-mark">
+              <svg class="checked-mark">
+                <use href="./images/icons.svg#checked"></use>
+              </svg>
+            </span>
+            Oświadczam iż akceptuję
+            <a class="policy-link" href="./index.html">Regulamin</a> i
+            <a class="policy-link" href="./index.html">Politykę Prywatności</a
+            >. </label
           ><button class="sign-up-button" type="submit">Wyślij</button>
         </form>
       </div>
